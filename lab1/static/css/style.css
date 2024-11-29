@@ -16,8 +16,57 @@ body {
     background-color: #2d2d2d;
     color: aliceblue;
     font-size: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
 }
 
 h1, p {
     text-align: center;
 }
+
+
+main {
+    flex-grow: 1;
+    display: grid;
+    place-content: center;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50px;
+    background-color: black;
+}
+
+nav li {
+    display: flex;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgb(234, 244, 242);
+    font-size: 14px;
+    padding: 0 10px;
+}
+
+nav a:hover {
+    opacity: .85;
+}
+

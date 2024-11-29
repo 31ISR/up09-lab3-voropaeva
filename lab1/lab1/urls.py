@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.urls import path, include
 
 
 urlpatterns = [
@@ -33,5 +34,8 @@ urlpatterns = [
     # в данном случае, возвращает HTML-шаблон "about.html".
 
     path('', views.home),
+
+    path('posts/', include('posts.urls')),
+    path('communities/', include('communities.urls')),
 
 ]
